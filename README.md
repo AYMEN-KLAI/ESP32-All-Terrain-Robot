@@ -1,3 +1,3 @@
 # ESP32-All-Terrain-Robot
 This project implements wireless control of a two-motor differential-drive robot using an ESP32 microcontroller, a dual H-Bridge driver (L298N), and a Sony PS4 DualShock 4 gamepad connected over Bluetooth Classic. The ESP32's onboard Bluetooth eliminates the need for any external receiver module, while the PS4-esp32 library handles pairing and button decoding out of the box. Direction pins on the H-Bridge are driven directly from ESP32 GPIOs (14, 27, 12, 13), and motor speed is set via PWM on the enable pins (GPIO 25, 26). The four D-pad buttons map to forward, reverse, and pivot movements at full speed, with an automatic motor stop triggered whenever the controller disconnects — a critical safety feature for any mobile platform.
-![Robot All-Terrain](ESP32 All-Terrain Robot/robot.jpg)
+![Robot All-Terrain](robot_terrain.jpg)
